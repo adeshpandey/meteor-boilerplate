@@ -1,0 +1,36 @@
+<template name="home">
+
+<div class="mdl-grid">
+
+{{#if l}}
+<div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col">
+  <div class="mdl-card__title">
+    <h2 class="mdl-card__title-text">Welcome</h2>
+  </div>
+  <div class="mdl-card__supporting-text">
+    This is a dynamic route: <strong>{{l}}</strong>
+  </div>
+  <div class="mdl-card__actions mdl-card--border">
+    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="http://getmdl.io">
+      Get Started
+    </a>
+  </div>
+</div>
+{{else}}
+	<div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col">
+  <div class="mdl-card__title">
+    <h2 class="mdl-card__title-text">Welcome</h2>
+  </div>
+  <div class="mdl-card__supporting-text">
+    rest at home
+  </div>
+  <div class="mdl-card__actions mdl-card--border">
+    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="http://getmdl.io">
+      Get Started
+    </a>
+  </div>
+</div>
+{{/if}}
+</div>
+
+</template>
